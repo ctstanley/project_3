@@ -1,0 +1,22 @@
+#Technologies used:
+1. Angularjs
+2. Elastic search
+
+#General approach
+1. 
+
+#Installation instructions
+1. Make sure to bundle install
+
+#User stories
+1. A user can log in, build a recipe using a brewery database, and track his or her homebrew beers
+
+#Wireframes
+1. Ideally a single page app that has a "scroll-bounce" feature upon view change
+
+#Entity relationship diagrams
+
+#Pitch Deck
+
+#Unsolved problems
+1. proper functionality of the app is not complete at the moment

@@ -1,0 +1,34 @@
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav navbar-left">
+                    <li><%= link_to 'Home', root_path %></li>
+                    <% if current_user %>
+                    <li><%= link_to 'Brews', brews_path %></li>
+                    <% else %>
+                    <% end %>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+                    <% if current_user %>
+                    <li><%= current_user.first_name %></li>
+                    <li class="divider"></li>
+                    <li><%= link_to "Log Out", logout_path %></li>
+                    <% else %>
+                    <li><%= link_to "Sign Up", signup_path %></li>
+                    <li><%= link_to "Log In", login_path %></li>
+                    <% end %>
+                   <!--  <% flash.each do |key, value| %>
+                    <%= content_tag(:div, class: "alert alert-#{key}") do %>
+                    <li><%= value %></li>
+                    <% end %>
+                    <% end %> -->
+        </ul>
+    </div>
+</div>
